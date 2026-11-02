@@ -1,5 +1,5 @@
 import { Pattern } from '@shakerquiz/utilities'
-import { guardBody } from 'source/utilities/guard-body.js'
+import { guardBody } from '../../utilities/guard-body.js'
 
 export const ParticipantsQueryPropValidation = Object.freeze({
   id: value =>

@@ -1,6 +1,6 @@
 import { MessageKind } from '@shakerquiz/utilities'
 import { isStringTag } from '@yurkimus/string-tag'
-import { guardBody } from 'source/utilities/guard-body.js'
+import { guardBody } from '../utilities/guard-body.js'
 
 export const MessagePropValidation = Object.freeze({
   // Template is not implemented yet, so we handle only Inline messages.

@@ -1,5 +1,5 @@
 import { ParticipantChoice } from '@shakerquiz/utilities'
-import { guardBody } from 'source/utilities/guard-body.js'
+import { guardBody } from '../utilities/guard-body.js'
 
 export const ParticipantPropValidation = Object.freeze({
   mongo_id: value => typeof value === 'string' && value !== '',

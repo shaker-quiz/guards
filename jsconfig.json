@@ -4,11 +4,6 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "allowJs": true,
-    "checkJs": true,
-    "paths": {
-      "source/*": [
-        "./source/*"
-      ]
-    }
+    "checkJs": true
   }
 }

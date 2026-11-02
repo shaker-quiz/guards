@@ -1,5 +1,5 @@
 import { Channel, Channels } from '@shakerquiz/utilities'
-import { guardBody } from 'source/utilities/guard-body.js'
+import { guardBody } from '../../utilities/guard-body.js'
 
 export const ChannelsQueryPropValidation = Object.freeze({
   channel: value => Object.hasOwn(Channel, value),

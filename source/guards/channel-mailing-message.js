@@ -1,4 +1,4 @@
-import { guardBody } from 'source/utilities/guard-body.js'
+import { guardBody } from '../utilities/guard-body.js'
 
 export const ChannelMailingMessagePropValidation = Object.freeze({
   sender: value => typeof value === 'string' && value !== '',
