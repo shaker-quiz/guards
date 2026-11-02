@@ -1,0 +1,31 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "guards",
+      "dependencies": {
+        "@shakerquiz/utilities": "4.0.122",
+        "@yurkimus/string-tag": "0.0.4",
+      },
+      "devDependencies": {
+        "@types/bun": "1.4.4",
+      },
+    },
+  },
+  "packages": {
+    "@shakerquiz/utilities": ["@shakerquiz/utilities@4.0.122", "", {}, "sha512-dNaiDNRQE7uq4YMqkiTBCK524tF8gGnZVq09aV2Nac1HVMMQ3iAQO9Ew3A2L/LxLFdjic8kY8009puCEwI825g=="],
+
+    "@types/bun": ["@types/bun@1.4.4", "", { "dependencies": { "bun-types": "1.4.4" } }, "sha512-9wkRDXUXK124pEnAutE6n/l18j+i9GC5IAHK8TmX/2nlySETmky0OU6yL5U8pW1AoKh++AN9auDCr647BfurjQ=="],
+
+    "@types/node": ["@types/node@26.6.6", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog=="],
+
+    "@yurkimus/string-tag": ["@yurkimus/string-tag@0.0.4", "", {}, "sha512-X+FD6rYT3qNKcFTke3HNeQgFVEe/VhmwzBK3vGn9Z6Auxs1857eNplO1AYsfxpTE7Ql2nM2GyG54d5nx8t2guQ=="],
+
+    "bun-types": ["bun-types@1.4.4", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-yjrJh5oGX7mMPKGd19YXyIjmEuj4G4zNC30bs7PM9Az7NQ3ndF3j6hbeRdvJTRQEhJ/FYQwW0a2moweEi2hMxQ=="],
+
+    "undici-types": ["undici-types@8.12.3", "", {}, "sha512-EXE4ydL3S76dFb27UFjNVZHTyv/TLdATj/KUe29ptdcg6qXL48J2tZ3126E5kICj5jn781OR+XlVH1N6Mz8jbA=="],
+
+    "@types/node/undici-types": ["undici-types@8.9.0", "", {}, "sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg=="],
+  }
+}

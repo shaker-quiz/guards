@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "@shakerquiz/guards",
+  "version": "0.0.0",
+  "author": "yurkimus <yurkimus@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaker-quiz/guards.git"
+  },
+  "exports": {
+    ".": {
+      "default": "./source/index.js"
+    }
+  },
+  "dependencies": {
+    "@shakerquiz/utilities": "4.0.122",
+    "@yurkimus/string-tag": "0.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4"
+  }
+}
