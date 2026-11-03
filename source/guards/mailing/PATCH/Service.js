@@ -1,5 +1,5 @@
 import { Phase } from '@shakerquiz/utilities'
-import { guardBody } from '../utilities/guard-body.js'
+import { guardBody } from '../../../utilities/guard-body.js'
 
 export const MailingProp = Object.freeze({
   phase: 'phase',
@@ -18,4 +18,17 @@ export const MailingPropException = Object.freeze({
   [MailingProp.reason]: `Body.reason must be a string.`,
 })
 
-export const guardMailingBody = guardBody('Object', MailingPropValidation, MailingPropException)
+let expected = [
+  MailingProp.phase,
+  MailingProp.reason,
+]
+
+let required = [
+  MailingProp.phase,
+]
+
+let validation = MailingPropValidation
+
+let exception = MailingPropException
+
+export const guardMailingPATCHServiceBody = guardBody('Object', expected, required, validation, exception)

@@ -1,6 +1,6 @@
 import { MessageKind } from '@shakerquiz/utilities'
 import { isStringTag } from '@yurkimus/string-tag'
-import { guardBody } from '../utilities/guard-body.js'
+import { guardBody } from '../../../../utilities/guard-body.js'
 
 export const MessageProp = Object.freeze({
   content: 'content',
@@ -20,4 +20,18 @@ export const MessagePropException = Object.freeze({
   [MessageProp.kind]: `Body.kind must be '${MessageKind.Inline}'.`,
 })
 
-export const guardMessageBody = guardBody('Object', MessagePropValidation, MessagePropException)
+let expected = [
+  MessageProp.content,
+  MessageProp.kind,
+]
+
+let required = [
+  MessageProp.content,
+  MessageProp.kind,
+]
+
+let validation = MessagePropValidation
+
+let exception = MessagePropException
+
+export const guardChannelMessagePOSTServiceBody = guardBody('Object', expected, required, validation, exception)
