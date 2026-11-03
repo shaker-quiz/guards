@@ -1,4 +1,4 @@
-import { guardBody } from '../utilities/guard-body.js'
+import { guardBody } from '../../../../../utilities/guard-body.js'
 
 export const ChannelMailingMessageProp = Object.freeze({
   recipient: 'recipient',
@@ -17,8 +17,18 @@ export const ChannelMailingMessagePropException = Object.freeze({
   [ChannelMailingMessageProp.sender]: `Body.sender must be a non-empty string.`,
 })
 
-export const guardChannelMailingMessageBody = guardBody(
-  'Object',
-  ChannelMailingMessagePropValidation,
-  ChannelMailingMessagePropException,
-)
+let expected = [
+  ChannelMailingMessageProp.recipient,
+  ChannelMailingMessageProp.sender,
+]
+
+let required = [
+  ChannelMailingMessageProp.recipient,
+  ChannelMailingMessageProp.sender,
+]
+
+let validation = ChannelMailingMessagePropValidation
+
+let exception = ChannelMailingMessagePropException
+
+export const guardChannelMailingMessagePOSTServiceBody = guardBody('Object', expected, required, validation, exception)
